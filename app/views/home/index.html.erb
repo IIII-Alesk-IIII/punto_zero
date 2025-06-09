@@ -8,6 +8,7 @@
         }
 %>
 
+
 <%=
    render partial: 'components/cardservizi',
         locals: {
@@ -27,3 +28,12 @@
             carditems: @carditems
         }
     %>
+
+
+<%= render partial: "/components/cardlavora",
+    locals: {
+       titolo1: "Unisciti al Nostro Team",
+       descrizione: "Vuoi far parte di un team dinamico e innovativo? Siamo sempre alla ricerca di talenti appassionati e motivati. Scopri le nostre opportunità di lavoro e unisciti a noi per costruire insieme il futuro.",
+       testo: "Scopri come entrare nel nostro team",
+    }
+ %>
