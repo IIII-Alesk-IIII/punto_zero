@@ -1,0 +1,38 @@
+<div class="bg-gray-50 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-bold text-gray-900 mb-12">  <%=  titolo_servizi %> </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+     
+      <div class="flex flex-col items-center text-center">
+        <svg class="w-10 h-10 mb-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M3 10h13l3 3v4a1 1 0 01-1 1H5a2 2 0 01-2-2v-6z" />
+          <path d="M16 10V6a1 1 0 00-1-1H5a2 2 0 00-2 2v2" />
+          <path d="M18 20a2 2 0 100-4 2 2 0 000 4zM6 20a2 2 0 100-4 2 2 0 000 4z" />
+        </svg>
+        <h3 class="text-lg font-semibold text-gray-900"> <%=  testo_spedizione %> </h3>
+        <a href="#" class="mt-2 text-sm text-gray-700 underline"> <%= testo_servizio %> </a>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <svg class="w-10 h-10 mb-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M9 17v-1a3 3 0 013-3h0a3 3 0 013 3v1" />
+          <path d="M12 12a4 4 0 100-8 4 4 0 000 8z" />
+          <path d="M20 15v2a2 2 0 01-2 2h-2" />
+          <path d="M4 15v2a2 2 0 002 2h2" />
+        </svg>
+        <h3 class="text-lg font-semibold text-gray-900"> <%= testo_clienti %> </h3>
+        <a href="#" class="mt-2 text-sm text-gray-700 underline"> <%= testo_contattaci %> </a>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <svg class="w-10 h-10 mb-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 4v5h.582M20 20v-5h-.581" />
+          <path d="M4.582 9A8.003 8.003 0 0112 4c3.042 0 5.656 1.715 7 4.236M19.418 15A8.003 8.003 0 0112 20c-3.042 0-5.656-1.715-7-4.236" />
+        </svg>
+        <h3 class="text-lg font-semibold text-gray-900"> <%= testo_resi %> </h3>
+        <a href="#" class="mt-2 text-sm text-gray-700 underline"> <%= testo_scopri %> </a>
+      </div>
+
+    </div>
+  </div>
+</div>

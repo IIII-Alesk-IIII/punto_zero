@@ -7,3 +7,23 @@
             immaginesfondo: "/images/sfondo_azienda.png",
         }
 %>
+
+<%=
+   render partial: 'components/cardservizi',
+        locals: {
+          titolo_servizi:"I nostri Progetti",
+          testo_spedizione:"Progetti realizzati il più velocemente possibile",
+          testo_servizio:"Scopri il servizio",
+          testo_clienti:"Il Cliente è al centro",
+          testo_resi:"Progetti che rispettano l'ambiente e sostenibili",
+          testo_contattaci:"Contattaci",
+          testo_scopri:"Scopri di più",
+      }
+%>
+
+
+ <%= render partial: "/components/card",
+        locals: {
+            carditems: @carditems
+        }
+    %>

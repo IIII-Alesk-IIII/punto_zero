@@ -1,0 +1,17 @@
+<div class="flex flex-col md:flex-row justify-center mt-70 h-90 md:min-h-[570px] w-full bg-white bg-cover bg-center mb-[350px] md:mb-10 gap-6  md:mt-5">
+    <% carditems.each do |carditem| %>
+        <div class="flex flex-col w-lg  h-auto min-h-[300px] rounded-4xl bg-no-repeat bg-cover shadow-2xl" style= "background-position: center; background-image:url('<%= carditem.immagine %>'); background-color: rgba(0,0,0,0.75);">
+        <div class=" rounded-4xl h-full" style="background-color: rgba(145, 145, 145, 0.3)">
+
+                <div class=" text-3xl  text-white w-full pt-30 md:pt-80 px-10 font-bold">
+                    <%= carditem.titolo %>
+                </div>
+
+                <div class=" text-4xl px-10 text-white font-bold">
+                    <%= carditem.anno %>
+                </div>
+
+            </div>
+        </div>
+    <% end %>
+</div>
