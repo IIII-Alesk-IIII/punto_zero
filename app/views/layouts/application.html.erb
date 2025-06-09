@@ -23,8 +23,24 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
+    <main class="">
+
+      <%= render partial: 'layouts/navbar',
+          locals:{
+            iscriviti:"Scrivi la tua mail per richidere il progetto ",
+            
+          }
+      %>
+
+    <%= yield %>
+
+      <%= render partial: 'layouts/footer',
+          locals:{
+            iscriviti:"Scrivi la tua mail per richidere il progetto ",
+            sconto:"Iscriviti per richidere un progetto dai nostri esperti.",
+            progetti:"Progetti",
+          }
+      %>
     </main>
   </body>
 </html>
